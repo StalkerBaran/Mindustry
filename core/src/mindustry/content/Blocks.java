@@ -4064,10 +4064,9 @@ public class Blocks{
         cyclone = new ItemTurret("cyclone"){{
             requirements(Category.turret, with(Items.copper, 200, Items.titanium, 125, Items.plastanium, 80));
             ammo(
-                Items.metaglass, new FlakBulletType(4f, 13){{
+                Items.metaglass, new FlakBulletType(4f, 12){{
                     ammoMultiplier = 5f;
-                    shootEffect = Fx.shootSmall;
-                    reloadMultiplier = 1.2f;
+                    shootEffect = Fx.shootSmall;  
                     width = 6f;
                     height = 11f;
                     hitEffect = Fx.flakExplosion;
@@ -4195,7 +4194,7 @@ public class Blocks{
                     pointEffect = Fx.instTrail;
                     despawnEffect = Fx.instBomb;
                     pointEffectSpace = 20f;
-                    damage = 1350;
+                    damage = 1250;
                     buildingDamageMultiplier = 0.5f;
                     maxDamageFraction = 0.6f;
                     pierceDamageFactor = 1f;
