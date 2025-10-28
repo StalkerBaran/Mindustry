@@ -1720,7 +1720,7 @@ public class UnitTypes{
             drag = 0.17f;
             hitSize = 39f;
             accel = 0.2f;
-            rotateSpeed = 3.2f;
+            rotateSpeed = 2.7f;
             faceTarget = false;
             ammoType = new ItemAmmoType(Items.thorium);
 
@@ -1810,7 +1810,7 @@ public class UnitTypes{
             hitSize = 58f;
             armor = 16f;
             accel = 0.19f;
-            rotateSpeed = 2.4f;
+            rotateSpeed = 2.2f;
             faceTarget = false;
             ammoType = new PowerAmmoType(4000);
 
@@ -2182,7 +2182,7 @@ public class UnitTypes{
             drag = 0.17f;
             hitSize = 44f;
             accel = 0.2f;
-            rotateSpeed = 3f;
+            rotateSpeed = 2.6f;
             faceTarget = false;
             ammoType = new PowerAmmoType(3500);
             ammoCapacity = 40;
@@ -2225,13 +2225,13 @@ public class UnitTypes{
         }};
 
         navanax = new UnitType("navanax"){{
-            health = 27000;
+            health = 23000;
             speed = 0.74f;
             drag = 0.17f;
             hitSize = 58f;
             armor = 23f;
             accel = 0.2f;
-            rotateSpeed = 3.3f;
+            rotateSpeed = 2.5f;
             faceTarget = false;
             ammoType = new PowerAmmoType(4500);
 
@@ -2240,7 +2240,7 @@ public class UnitTypes{
             waveTrailY = -32f;
             trailScl = 3.5f;
 
-            abilities.add(new StatusFieldAbility(StatusEffects.overdrive, 180f * 6, 60f * 6f, 60f));
+            abilities.add(new StatusFieldAbility(StatusEffects.overdrive, 120f * 6, 60f * 6f, 60f));
             
             buildSpeed = 3.5f;
             rotateToBuilding = false;
@@ -2328,7 +2328,7 @@ public class UnitTypes{
                     timeIncrease = 3f;
                     timeDuration = 60f * 20f;
                     powerDamageScl = 3f;
-                    damage = 70;
+                    damage = 30;
                     hitColor = lightColor = Pal.heal;
                     lightRadius = 70f;
                     clipSize = 250f;
@@ -2340,7 +2340,7 @@ public class UnitTypes{
                     frontColor = Color.white;
                     width = height = 12f;
                     shrinkY = 0f;
-                    speed = 9f;
+                    speed = 8f;
                     trailLength = 20;
                     trailWidth = 6f;
                     trailColor = Pal.heal;
