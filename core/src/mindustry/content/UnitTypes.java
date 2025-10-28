@@ -2240,7 +2240,7 @@ public class UnitTypes{
             waveTrailY = -32f;
             trailScl = 3.5f;
 
-            abilities.add(new StatusFieldAbility(StatusEffects.overdrive, 60f * 6, 60f * 6f, 60f));
+            abilities.add(new StatusFieldAbility(StatusEffects.overdrive, 60f * 6, 60f * 6f, 120f));
             
             buildSpeed = 3.5f;
             rotateToBuilding = false;
