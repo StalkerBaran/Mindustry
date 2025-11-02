@@ -3659,7 +3659,7 @@ public class Blocks{
                     shrinkY = 0f;
                     homingPower = 0.08f;
                     splashDamageRadius = 44f;
-                    splashDamage = 32f;
+                    splashDamage = 31f;
                     makeFire = true;
                     ammoMultiplier = 5f;
                     hitEffect = Fx.blastExplosion;
@@ -3670,7 +3670,7 @@ public class Blocks{
                     height = 8f;
                     shrinkY = 0f;
                     splashDamageRadius = 26f;
-                    splashDamage = 35f;
+                    splashDamage = 32f;
                     hitEffect = Fx.blastExplosion;
                     despawnEffect = Fx.blastExplosion;
                     ammoMultiplier = 4f;
