@@ -1201,17 +1201,17 @@ public class UnitTypes{
             engineOffset = 38;
             engineSize = 7.3f;
             hitSize = 58f;
-            armor = 17f;
+            armor = 15f;
             targetFlags = new BlockFlag[]{BlockFlag.reactor, BlockFlag.battery, BlockFlag.core, null};
             ammoType = new ItemAmmoType(Items.thorium);
 
-            BulletType fragBullet = new FlakBulletType(4f, 35){{
+            BulletType fragBullet = new FlakBulletType(4f, 32){{
                 shootEffect = Fx.shootBig;
                 ammoMultiplier = 4f;
                 splashDamage = 65f;
                 splashDamageRadius = 25f;
                 collidesGround = true;
-                lifetime = 65f;
+                lifetime = 50f;
 
                 status = StatusEffects.blasted;
                 statusDuration = 60f;
@@ -1236,7 +1236,7 @@ public class UnitTypes{
                     sideWidth = 1.5f;
                     sideLength = 80f;
                     width = 25f;
-                    length = 257f;
+                    length = 233f;
                     shootEffect = Fx.shockwave;
                     colors = new Color[]{Color.valueOf("ec7458aa"), Color.valueOf("ff9c5a"), Color.white};
                 }};
