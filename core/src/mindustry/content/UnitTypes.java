@@ -1119,7 +1119,7 @@ public class UnitTypes{
             speed = 0.72f;
             accel = 0.04f;
             drag = 0.04f;
-            rotateSpeed = 2.2f;
+            rotateSpeed = 1.9f;
             flying = true;
             lowAltitude = true;
             health = 8100;
@@ -1194,7 +1194,7 @@ public class UnitTypes{
             speed = 0.66f;
             accel = 0.04f;
             drag = 0.04f;
-            rotateSpeed = 1.9f;
+            rotateSpeed = 1.3f;
             flying = true;
             lowAltitude = true;
             health = 22000;
@@ -1211,7 +1211,7 @@ public class UnitTypes{
                 splashDamage = 65f;
                 splashDamageRadius = 25f;
                 collidesGround = true;
-                lifetime = 50f;
+                lifetime = 55f;
 
                 status = StatusEffects.blasted;
                 statusDuration = 60f;
@@ -1236,7 +1236,7 @@ public class UnitTypes{
                     sideWidth = 1.5f;
                     sideLength = 80f;
                     width = 25f;
-                    length = 233f;
+                    length = 236f;
                     shootEffect = Fx.shockwave;
                     colors = new Color[]{Color.valueOf("ec7458aa"), Color.valueOf("ff9c5a"), Color.white};
                 }};
