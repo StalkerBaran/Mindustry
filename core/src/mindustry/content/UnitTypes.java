@@ -561,7 +561,7 @@ public class UnitTypes{
             ammoType = new PowerAmmoType(4000);
             groundLayer = Layer.legUnit;
 
-            speed = 0.36f;
+            speed = 0.3f;
 
             drawShields = false;
 
