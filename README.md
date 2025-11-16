@@ -69,7 +69,6 @@ Unit builcost changes:
 **Wet:**
 - Transition damage: 14 → 13
 
-## Turrets
 
 ## Turrets
 ### Duo
