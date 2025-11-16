@@ -1,78 +1,406 @@
-![Logo](core/assets-raw/sprites/ui/logo.png)
-
-[![Build Status](https://github.com/Anuken/Mindustry/workflows/Tests/badge.svg?event=push)](https://github.com/Anuken/Mindustry/actions)
-[![Discord](https://img.shields.io/discord/391020510269669376.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord&color=17cf48)](https://discord.gg/mindustry)  
-
-The automation tower defense RTS, written in Java.
-
-_[Trello Board](https://trello.com/b/aE2tcUwF/mindustry-40-plans)_  
-_[Wiki](https://mindustrygame.github.io/wiki)_  
-_[Javadoc](https://mindustrygame.github.io/docs/)_ 
-
-## Contributing
-
-See [CONTRIBUTING](CONTRIBUTING.md).
-
-## Building
-
-Bleeding-edge builds are generated automatically for every commit. You can see them [here](https://github.com/Anuken/MindustryBuilds/releases).
-
-If you'd rather compile on your own, follow these instructions.
-First, make sure you have [JDK 17](https://adoptium.net/temurin/releases/?os=any&arch=any&version=17) installed. **Other JDK versions will not work.** Open a terminal in the Mindustry directory and run the following commands:
-
 ### Windows
 
 _Running:_ `gradlew desktop:run`  
 _Building:_ `gradlew desktop:dist`  
 _Sprite Packing:_ `gradlew tools:pack`
+_Server:_ `gradlew server:dist`
 
-### Linux/Mac OS
+# Changelog
 
-_Running:_ `./gradlew desktop:run`  
-_Building:_ `./gradlew desktop:dist`  
-_Sprite Packing:_ `./gradlew tools:pack`
+## Cores
 
-### Server
+**Core Armor Additions:**
+- Shard: Health 1100 → 2000, Armor 0 → 3
+- Foundation: Armor 0 → 5
+- Nucleus: Health 6000 → 9000, Armor 0 → 8
 
-Server builds are bundled with each released build (in Releases). If you'd rather compile on your own, replace 'desktop' with 'server', e.g. `gradlew server:dist`.
+## Walls
 
-### Android
+**Plastanium Wall:**
+- health: 400 (2000) -> 620 (2560)
+**Phase Wall:**
+- health: 600 (2400) → 720 (2880)
+**Surge Wall:**
+- health: 920 (3680) -> 980 (3920)
+**Scrap Wall:**
+- health: 240 (960, 2160, 3840) -> 200 (800, 1800, 3200) 
 
-1. Install the Android SDK [here.](https://developer.android.com/studio#command-tools) Make sure you're downloading the "Command line tools only", as Android Studio is not required.
-2. In the unzipped Android SDK folder, find the cmdline-tools directory. Then create a folder inside of it called `latest` and put all of its contents into the newly created folder.
-3. In the same directory run the command `sdkmanager --licenses` (or `./sdkmanager --licenses` if on linux/mac)
-4. Set the `ANDROID_HOME` environment variable to point to your unzipped Android SDK directory.
-5. Enable developer mode on your device/emulator. If you are on testing on a phone you can follow [these instructions](https://developer.android.com/studio/command-line/adb#Enabling), otherwise you need to google how to enable your emulator's developer mode specifically.
-6. Run `gradlew android:assembleDebug` (or `./gradlew` if on linux/mac). This will create an unsigned APK in `android/build/outputs/apk`.
+## Other non-turret blocks (real)
 
-To debug the application on a connected device/emulator, run `gradlew android:installDebug android:run`.
+**Ground Factory:**
+- Requirements (block buildcost): Copper 50 → 120, Lead 120 → 70
 
-### Troubleshooting
+Unit builcost changes:
+- dagger (10 silicon, 10 lead -> 15 silicom, 10 lead)
+- crawler (8 silicon, 10 coal -> 10 silicon, 8 coal)
+- nova (30 silicon, 20 lead, 20 titanium -> 25 silicon, 10 lead, 15 titanium)
 
-#### Permission Denied
+**Air Factory:**
+- Requirements (block buildcost): Titanium 0 → 35 added
 
-If the terminal returns `Permission denied` or `Command not found` on Mac/Linux, run `chmod +x ./gradlew` before running `./gradlew`. *This is a one-time procedure.*
+**Reconstructors:**
+- Additive Reconstructor: Reduced consumption (Silicon 40 → 30, Graphite 40 → 30)
 
-#### Where is the `mindustry.gen` package?
+**Repair Turret**
+- repairSpeed: 180/sec -> 90/sec
 
-As the name implies, `mindustry.gen` is generated *at build time* based on other code. You will not find source code for this package in the repository, and it should not be edited by hand.
+**Overdrive Projector**
+- requirements (block buildcost): lead: 100 -> 210, titanium: 75 (no changes), silicon: 75 (no changes), plastanium: 30 -> 35
+             
+**Overdrive Dome**
+- requirements (block buildcost): lead: 200 -> 720, titanium: 130 -> 210, silicon: 130 -> 170, plastanium: 80 -> 175, surgeAlloy: 120 -> 275
+- consumePower: 600 pu/sec -> 1500 pu/sec
+            
+**ShockMine**
+- health: 50 -> 30
+- tendrils: 4 -> 7
+- damage: 25 -> 15
 
-The following is a non-exhaustive list of the "source" of generated code in `mindustry.gen`:
 
-- `Call`, `*Packet` classes: Generated from methods marked with `@Remote`.
-- All entity classes (`Unit`, `EffectState`, `Posc`, etc): Generated from component classes in the `mindustry.entities.comp` package, and combined using definitions in `mindustry.content.UnitTypes`.
-- `Sounds`, `Musics`, `Tex`, `Icon`, etc: Generated based on files in the respective asset folders.
+## Effects
+**Burning:**
+- Added reload multiplier: 0.9
+- Added speed multiplier: 0.9
+- Transition damage: 8 → 12
+
+**Freezing:**
+- Transition damage: 18 → 14
+
+**Wet:**
+- Transition damage: 14 → 13
+
+## Turrets
+
+## Turrets
+### Duo
+- copper: damage: 9 -> 13
+- graphite: damage: 18 -> 21, reloadMultiplier = 0.7x
+- silicon: damage: 12 -> 15
+
+- range: 20 -> 21
+
+### Scatter
+- scrap: splashDamage: 33 -> 25, splashDamageRadius: 3.0 -> 4.1
+- lead: splashDamage: 40 -> 22, splashDamageRadius: 1.8 -> 3.3
+- metaglass: splashDamage: 45 -> 15*1.5, splashDamageRadius: 2.5 -> 3.3, fragBullets: 6 -> 4, reloadMultiplier: 0.8x -> 0.7x
+  
+- increased coolant buff (water: 140% -> 160%; cryofluid: 190% -> 235%)
+
+### Scorch
+- pyratite: damage: 60 -> 35
+
+- range: 7.5 -> 9
+
+### Hail
+- silicone: splashDamage: 33 -> 27
+- pyratite: splashDamageRadius: 2.3 -> 2.6
+
+### Wave
+- slag: rangeChange (+3 range)
+- oil: rangeChange (+3 range)
+
+### Lancer
+- damage: 140 -> 120
+
+### Arc
+- damage: 20 -> 13
+- reload = 1.71 -> 1.87
+
+### Parallax
+No changes /shrug
+
+### Swarmer
+- blastCompound: damage: 10 -> 13; splashdamage: 45 -> 33; splashDamageRadius: 3.7 -> 5.2
+- pyratite: damage: (no changes); splashdamage: 45 -> 32; splashDamageRadius: 2.5 -> 5.5
+- surgeAlloy: damage: 18 -> 15; splashDamageRadius: 3.1 -> 3.2
+
+### Salvo
+- copper: damage: 11 -> 13
+- graphite: damage: 20 -> 25, reloadMultiplier = 0.7x
+- pyratite: damage: 18 -> 22, splashDamage = 12 -> 15, splashDamageRadius = 2.7 -> 2.8, pierceCap = 2, knockback = 0.7
+- silicon: damage: 15 -> 18, reloadMultiplier = 1.5 -> 1.3, knockback = 0.3
+- thorium: damage: 29 -> 27, reloadMultiplier = 0.7x, knockback = 1.5, pierceCap = 2
+
+- reload: 31f -> 32f
+- requirements (block buildcost): copper = 100, graphite = 80 -> copper = 125, graphite = 70
+
+- added inaccuracy (real)
+
+### Segment
+No changes
+
+## Tsunami
+- slag: rangeChange (+4 range);
+- cryofluid: rangeChange (+2.5 range);
+- oil: rangeChange (+4 range);
+
+### Fuse
+No changes
+
+## Ripple
+- plastanium: splashDamage: 45 -> 32, pierceCap = 2, fragBullets: 10 -> 5, fragBulletDamage (idk how it names): 10 -> 12
+- blastCompound: splashDamage: 55 -> 75, splashDamageRadius = 4.2 -> 5.2, reloadMultiplier: 0.7x
+- pyratite: splashDamage: 45 -> 48, splashDamageRadius = 2.3 -> 4.7
+
+- requirements (block buildcost): copper = 150, graphite = 135, titanium = 60 -> copper = 175, graphite = 90, titanium = 70
+
+### Cyclone
+- metaglass: damage: 6 -> 13, ammoMultiplier: 2x -> 5x, reloadMultiplier: 0.8x -> 1.2x, splashDamage: 45 -> 32, fragBullets: 4 -> 10
+- blastCompound: damage: 8 -> 12, splashDamage: 45 -> 55
+- plastanium: damage: 8 -> 15, splashDamage: 37 -> 35
+- surgeAlloy: splashDamageRadius = 4.7 -> 4.3
+
+- coolant: 0.3f -> 0.2f ((decreased coolant buff (water: 160% -> 140%; cryofluid: 235% -> 190%))
+
+### Foreshadow
+- reload: 0.3 -> 0.22 /todo
+- increased coolant buff (water: 116% -> 140%; cryofluid: 136% -> 190%)
+
+### Spectre
+- graphite: damage: 50 -> 75, ammoMultiplier: 4 -> 3, knockback: 0.3 -> 1
+- thorium: damage: 80 -> 120, knockback: 0.7 -> 1.3, ammoMultiplier: 4 -> 2
+- pyratite: damage: 70 -> 110, splashDamage: 20 -> 32, knockback: 0.6 -> 0.7
+
+- reload: 8.57 -> 8
+- increased coolant buff (water: 116% -> 140%; cryofluid: 136% -> 190%)
+- maxAmmo: 30 -> 90
+- range: 32.5 -> 34.1
+
+### Meltdown
+- damage: 936/sec -> 1560/sec
+- reload: 90f -> 170f,
+- firerate: 0.666 -> 0.352
 
 ---
 
-Gradle may take up to several minutes to download files. Be patient. <br>
-After building, the output .JAR file should be in `/desktop/build/libs/Mindustry.jar` for desktop builds, and in `/server/build/libs/server-release.jar` for server builds.
+## Units (headpain)
+### Dagger
+- Speed: 3.75 → 4.8
+- Health: 150 → 120
+- Armor: 0 -> 2
+- Firerate: 2.3 -> 1.5
+- Damage: 9 → 12
 
-## Feature Requests
+### Mace
+- Speed: 3.75 → 4.575
+- Health: 550 → 510
+- Armor: 4 → 5
+- Damage: 37 → 27
 
-Post feature requests and feedback [here](https://github.com/Anuken/Mindustry-Suggestions/issues/new/choose).
+### Fortress
+- Speed: 3.225 → 3.75
+- Health: 900 → 910
+- Armor: 9 → 10
+- Spldashdamage: 80 → 70
+- Increased fortress speed projectile
+  
+### Scepter
+- Speed: 2.7 → 3.9
+- Health: 9000 → 9100
+- Armor: 10 → 14
+- Small bullet damage: 10 → 23
+- Main bullet damage: 80 → 70
+- Range: 26.5 -> 21.5
 
-## Downloads
+### Reign
+- Speed: 3 → 3.6
+- Health: 24000 → 25000
+- Armor: 18 → 27
+- Range: 23.8 -> 27.2
 
-| [![](https://static.itch.io/images/badge.svg)](https://anuke.itch.io/mindustry)    |    [![](https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png)](https://play.google.com/store/apps/details?id=io.anuke.mindustry)   |    [![](https://fdroid.gitlab.io/artwork/badge/get-it-on.png)](https://f-droid.org/packages/io.anuke.mindustry)	| [![](https://flathub.org/assets/badges/flathub-badge-en.svg)](https://flathub.org/apps/details/com.github.Anuken.Mindustry)  
-|---	|---	|---	|---	|
+---------------------------
+
+### Nova
+- Speed: 4.125 → 5.1
+- Health: 120 → 90
+- Armor: 1 → 3 
+- Damage: 13 → 15
+
+- Build speed: 30% -> 50%
+- Strongly buffed repair field (2.5/sec -> 6.66/sec)
+
+### Pulsar
+- Speed: 5.25 → 5.49
+- Health: 320 → 290
+- Mine speed: 300% -> 350%
+- Heal weapon bullet:
+  - Heal percent: 5% → 1%
+  - Added heal amount: 10
+- Lightning bullet:
+  - Damage: 15 → 13
+  - Lightning length: 8 → 7
+  - Heal percent: 1.6% → 0.75%
+
+### Quasar
+- Health: 640 → 750
+- Armor: 9 → 8
+- Speed: 3.75 → 4.01
+- Range: 18.2 -> 16.3
+  
+- Force Field Ability:
+  - Regen: 24/sec → 18/sec
+  - Max: 400 → 512
+  - Cooldown: 6 seconds → 3 seconds
+- Beam weapon laser bullet:
+  - Damage: 45 → 52
+  - Heal percent: 10% → 5%
+  - Added heal amount: 35
+
+### Vela
+- Speed: 3.3 → 4.2 (slighty decreased boost multiplier)
+- Health: 8200 → 7800
+- Armor: 9 → 13
+- Repair beam speed: 84/sec (*2) → 116/sec (*2)
+
+### Corvus
+- Health: 18000 → 15000
+- Armor: 9 → 12
+
+- Weapon now fires 3 shots with short delay between shots (instead single beam)
+  
+- Laser damage (per shot): 560 → 74 (or 74 * 3 * 3 = 666 damage per burst (damage to buildings))
+- Added building damage multiplier: 3x
+- Heal percentage: 25% → 18%
+
+---------------------------
+
+### Crawler
+- Health: 150 → 110
+
+### Atrax**
+- Speed: 4.5 → 6.3
+- Health: 600 → 370
+- Weapon damage: 13 → 12
+
+### Spiroct
+- Speed: 4.05 → 6.21
+- Health: 1000 → 1100
+- Armor: 5 → 7
+
+### Arkyid
+- Speed: 4.65 → 6.9
+- Health: 8000 → 7800
+- Armor: 6 → 12
+- (Artillery weapon) Splashdamage: 65 → 75
+
+### Toxopid
+- Speed: 3.75 → 5.1
+- Health: 22000 → 21000
+- Armor: 13 → 18
+- Shrapnel (fuse-like) weapon damage: 110 → 180
+- Artillery (long cannon) weapon damage: 50 → 110
+
+---------------------------
+
+### Flare
+- Health: 70 → 35
+- Firerate: 1.5 -> 2
+- Bullet damage: 9 → 10
+
+### Horizon
+- Health: 340 → 240
+- Speed: 12.375 → 16.5
+- Damage (splashdamage): 27 → 23
+
+### Zenith
+- Health: 700 → 510
+- Range: 19.6 -> 21.8
+
+### Antumbra
+- Speed: 6 → 5.4
+- Health: 7200 → 8100
+- Armor: 9 → 8
+- Range: 21.3 -> 28.2
+- Missile damage: 18 → 23
+- Missile splash radius: 2.5 → 4.1
+
+### Eclipse
+- Speed: 4.05 → 4.95
+- Armor: 13 → 17
+- Range: 28.2 -> 29
+  
+**Flak bullet**:
+- Damage: 15 → 35
+
+**Laser weapon**:
+- Damage: 115 → 130
+
+---------------------------
+
+### Mono
+no changes
+
+### Poly
+- Health: 400 → 170
+- Armor: 0 → 1
+- Build speed: 30% -> 50%
+- buffed repair field (0.62/sec -> 2.67/sec)
+- Heal percent: 5.5% → 3%
+- healAmount: added 7.5
+
+### Mega
+- Health: 460 → 380
+- Armor: 3 → 2
+- Speed: 18.75 → 19.2
+- HealPercent 3% → 2%
+- HealAmount: added 5.5
+
+### Quad
+- Build speed: 250% → 350%
+
+### Oct
+- Armor: 16 → 15
+- Health: 24000 → 18000
+- Force field ability: regen 240/sec → 600/sec, max 7000 → 12000
+- Repair field ability: regen 65/sec -> 350/sec
+
+---------------------------
+
+### Risso
+- Speed: 8.25 -> 7.72
+- Health: 280 -> 220
+
+### Minke
+- Health: 600 -> 370
+- Speed: 6.75 -> 6.15
+- Range: 31 -> 24.6
+
+### Bryde
+- Health: 600 -> 370
+- Speed: 6.37 -> 5.85
+- Range: 31 -> 29.5
+
+### Sei
+- Armor: 12 -> 15
+- Speed: 5.47 -> 5.7
+- Range: 35.2 -> 31.4
+
+### Omura
+- Health: 22000 -> 21000
+- Range: 62 -> 50.7
+- Speed: 4.65 -> 3.97
+---------------------------
+
+### Retusa
+Returned metaglass in its cost
+
+### Oxynoe
+Decreased segment-like attack firerate
+
+### Cyerce
+- Health: 870 -> 720
+- Armor: 6 -> 8
+- RepairSpeed: 42 (*2) -> 34 (*2)
+- Speed: 6.45 -> 5.81
+  
+### Aegires
+- Health: 12000 -> 9000
+- Speed: 5.25 -> 5.62
+  
+### Navanax
+- Health: 20000 -> 23000
+- Armor: 16 -> 23
+- Speed: 4.87 -> 5.55
+
+- Changed main cannon firerate (0.46/sec -> 0.81/sec), damage (60 -> 30), splashdamage (70 -> 210), range (37 -> 34.5)
+- Minor range and firerate buff for scorch-like cannons
