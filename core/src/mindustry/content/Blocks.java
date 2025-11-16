@@ -1775,14 +1775,14 @@ public class Blocks{
 
         scrapWall = new Wall("scrap-wall"){{
             requirements(Category.defense, with(Items.scrap, 6));
-            health = 60 * wallHealthMultiplier;
+            health = 50 * wallHealthMultiplier;
             variants = 5;
             buildCostMultiplier = 4f;
         }};
 
         scrapWallLarge = new Wall("scrap-wall-large"){{
             requirements(Category.defense, ItemStack.mult(scrapWall.requirements, 4));
-            health = 60 * 4 * wallHealthMultiplier;
+            health = 50 * 4 * wallHealthMultiplier;
             size = 2;
             variants = 4;
             buildCostMultiplier = 4f;
@@ -1790,7 +1790,7 @@ public class Blocks{
 
         scrapWallHuge = new Wall("scrap-wall-huge"){{
             requirements(Category.defense, ItemStack.mult(scrapWall.requirements, 9));
-            health = 60 * 9 * wallHealthMultiplier;
+            health = 50 * 9 * wallHealthMultiplier;
             size = 3;
             variants = 3;
             buildCostMultiplier = 4f;
@@ -1798,7 +1798,7 @@ public class Blocks{
 
         scrapWallGigantic = new Wall("scrap-wall-gigantic"){{
             requirements(Category.defense, ItemStack.mult(scrapWall.requirements, 16));
-            health = 60 * 16 * wallHealthMultiplier;
+            health = 50 * 16 * wallHealthMultiplier;
             size = 4;
             buildCostMultiplier = 4f;
         }};
