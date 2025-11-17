@@ -28,7 +28,7 @@ _Server:_ `gradlew server:dist`
 ## Other non-turret blocks (real)
 
 **Ground Factory:**
-- Requirements (block buildcost): Copper 50 → 120, Lead 120 → 70
+- Requirements (block buildcost): copper 50 → 120, lead 120 → 70
 
 Unit builcost changes:
 - dagger (10 silicon, 10 lead -> 15 silicom, 10 lead)
@@ -332,7 +332,7 @@ no changes
 ### Poly
 - Health: 400 → 170
 - Armor: 0 → 1
-- Build speed: 30% -> 50%
+- Build speed: 50% -> 30%
 - buffed repair field (0.62/sec -> 2.67/sec)
 - Heal percent: 5.5% → 3%
 - healAmount: added 7.5
