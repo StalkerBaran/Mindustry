@@ -5,7 +5,11 @@ _Building:_ `gradlew desktop:dist`
 _Sprite Packing:_ `gradlew tools:pack`
 _Server:_ `gradlew server:dist`
 
-# Changelog
+# Changelog. I gonna slowly turn this changelog in documentation ~~(changelog but with description and writing every reason to my changes)~~
+
+-----------------
+# Global changes
+This changes appliees to most stuff in game and/or strongly affect in game (important to keep in head this changes before looking of separated changelog)
 
 ## Cores
 
@@ -14,7 +18,17 @@ _Server:_ `gradlew server:dist`
 - Foundation: Armor 0 → 5
 - Nucleus: Health 6000 → 9000, Armor 0 → 8
 
-## Walls
+Cores got armor and health buff! It might looks like questionable change, but it suppose to make most T1 attacks (and any units with low damage and/or fast firerate) more designed for eco harass. Armor suppose to makes T1 less dangerous for killing cores, making T2 in game more useful. Also upgrading core will make a more sense in PvP (and even PvE probably) to make it more defendable (against units like zenith, spiroct and etc (all units with low damage but good DPS on non-armor stuff). Also it make flares (together with other changes, yoy gonna read them later) less broken unit. Also cores got health buff as counterbuff to a percentage healing nerf (like poly, mega, ...), so outheal your core would be much harder, but increased health and armor gonna give you more time for defending 
+
+
+## Global mobility buff/debuff
+
+Most turrets got small nerfs in rotarespeed (and huge nerfs for foreshadow, spectre and meltdown). Most of this changes are cosmetic and making turrets looks less insane (imagine swarmer/meltdown with cryo and overdrive shizo crazy fast rotarespeed, it looks funny, but probably need a small fixes). 4x4 turrets (spectre, foreshadow and meltdown) got very huge rotarespeed nerf to make them looks more scareful and powerful (and atleast seriosly being used with cryo + overdrive). This changes can easily be discussed in community if peoples wanna see crazy fast rotarespeed as meme part of game (like navanax cannon which can boost buildings like overdrive, nobody uses it, but looks like evil joke)
+
+Most units got huge mobility buffs (almost all units got rotarespeed buff (except, uh... corvus) and most units got speed buff (except corvus, flare, zenith, (recheck changes to not lie, //todo). Some naval units got speed buff, some weren't changed and some got even slighty slower (check individually for every units below (unit changes)). Naval units got most huge rotarespeed buff to make them much easier and comfortable to control (very huge and annoying rotare got changed into small and fast, which also makes easier to move in small rivers (they wont stuck in 3x3 river rn, trust fr). Other units also got faster and more interesting for control (mobility buffs for units are one of important global changes for units which makes them stronger in PvP and PvE (player side) without making PvE (crux side) harder) for avoiding new difficulty gaps in campaign //todo
+
+
+
 
 **Plastanium Wall:**
 - health: 400 (2000) -> 620 (2560)
