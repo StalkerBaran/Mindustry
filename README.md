@@ -32,10 +32,13 @@ Most units got huge mobility buffs (almost all units got rotarespeed buff (excep
 
 **Plastanium Wall:**
 - health: 400 (2000) -> 620 (2560)
+
 **Phase Wall:**
 - health: 600 (2400) → 720 (2880)
+
 **Surge Wall:**
 - health: 920 (3680) -> 980 (3920)
+
 **Scrap Wall:**
 - health: 240 (960, 2160, 3840) -> 200 (800, 1800, 3200) 
 
