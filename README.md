@@ -35,11 +35,31 @@ This change more touches competitive gamemodes (1 vs 1 PvP, FFA (Hexed, OpenPvP,
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec63af86-b59b-4a6e-a1be-884d7d8e0c17" /> 
 <img width="522" height="189" alt="image" src="https://github.com/user-attachments/assets/4559078d-9cd0-4eb8-a084-f387c500ca76" /> //todo add direct healing for poly and reduce percentage to 2%)
 
+## Minor unit factory changes
+Ye, I thought its also important to remember (this changes are the only which touches ratios (can be important for scheme builders and curated designes). I'll copy here a shortly changelog for changes which I made
 
+**Ground Factory:**
+- Requirements (block buildcost): copper 50 → 120, lead 120 → 70
+(Minor change which was made in first rebalance versions. I dont remember why I made this, so it can be discussed and removed. It feels more cosmetic (In PvE it doesn't matter but might allow for PvP players to create slightly different early game build orders ~~ground vs air enjoiners~~) 
 
+Unit builcost changes:
+- dagger (10 silicon, 10 lead -> 15 silicom, 10 lead)
+(It was made to make daggers harder to spam on first minuts (since it request even lower silicon amount than flare), also keep in head that T1 change nerf compensated by T2 cost buffs (read below))
+- crawler (8 silicon, 10 coal -> 10 silicon, 8 coal)
+(Very minor change, make it slighty more expensive in silicon amount and less affect from coal (also makes slightly harder to spam them in early game)
+- nova (30 silicon, 20 lead, 20 titanium -> 25 silicon, 10 lead, 15 titanium)
+(Huge nova cost buff, now it feels more usable in PvE and PvP. Important change for nova to make it moee usable (and easier to produce in bigger amount))
 
+**Air Factory:**
+- Requirements (block buildcost): Titanium 0 → 35 added
+(Now air factory request titanium in build cost. Necessary evil which designed to delay first flare production without making them very weak. Also it delays mono production, which increase time window where ground T2 rush (atrax, mace) can be useful and not spammed with poly arc/wall spam (PvP), delays mono production in campaign, which suppose to learn novice how to optimise drills (give more time for novice to learn input water in drills (and atleast to not connect 999 drills to single conveyor (real))
 
+**Reconstructors:**
+- Additive Reconstructor: Reduced consumption (Silicon: 40 → 30, Graphite: 40 → 30)
+(Decreased consumption for T2 factory. It was made because T2 feels to expensive for mass production and combining poly + other T2 productionm. Increases window when players could play with T1 and T2 (and combine T1 + T2 (like nova + mace/nova + dagger/...) before players get enough resourses for making first T3 units (and might even build orders for combining T2 + T3 (like atrax + spiroct in pvp). As counternerf, most T2 got small nerfs in stats (because decreased T2 cost and also mobility buff exist) //todo
+--------------------
 
+## Walls (wols)
 **Plastanium Wall:**
 - health: 400 (2000) -> 620 (2560)
 
