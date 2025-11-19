@@ -1,4 +1,4 @@
-### Windows
+6### Windows
 
 _Running:_ `gradlew desktop:run`  
 _Building:_ `gradlew desktop:dist`  
@@ -120,13 +120,15 @@ Unit builcost changes:
 - Added reload multiplier: 0.9
 - Added speed multiplier: 0.9
 - Transition damage: 8 → 12
+(Burning effect was made for buffing mace to counter against atrax enjoiners (which using melting effect with even more insane multiplies). Also it makes turrets on pyratite ammo (hail, swarmer, ripple, spectre)
 
 **Freezing:**
 - Transition damage: 18 → 14
+(Transition nerf to avoid new blast meta, btw its still good (because freezing gives very powerful multiplies)
 
 **Wet:**
 - Transition damage: 14 → 13
-
+(Surge + water nerf)
 
 ## Turrets
 ### Duo
