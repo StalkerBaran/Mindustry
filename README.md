@@ -4,6 +4,8 @@ _Running:_ `gradlew desktop:run`
 _Building:_ `gradlew desktop:dist`  
 _Sprite Packing:_ `gradlew tools:pack`
 _Server:_ `gradlew server:dist`
+(Ignore this thats for me)
+
 
 # Changelog. I gonna slowly turn this changelog in documentation ~~(changelog but with description and writing every reason to my changes)~~
 
