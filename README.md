@@ -29,10 +29,11 @@ Most turrets got small nerfs in rotarespeed (and huge nerfs for foreshadow, spec
 
 Most units got huge mobility buffs (almost all units got rotarespeed buff (except, uh... corvus) and most units got speed buff (except corvus, flare, zenith, (recheck changes to not lie, //todo). Some naval units got speed buff, some weren't changed and some got even slighty slower (check individually for every units below (unit changes)). Naval units got most huge rotarespeed buff to make them much easier and comfortable to control (very huge and annoying rotare got changed into small and fast, which also makes easier to move in small rivers (they wont stuck in 3x3 river rn, trust fr). Other units also got faster and more interesting for control (mobility buffs for units are one of important global changes for units which makes them stronger in PvP and PvE (player side) without making PvE (crux side) harder) for avoiding new difficulty gaps in campaign. I dont thinking that someone will against mobility buffs (???)
 
-## Huge unit healing ability
+## Huge unit healing ability rework
+
 This change more touches competitive gamemodes (1 vs 1 PvP, FFA (Hexed, OpenPvP, ...), less affect PvE. Most units (Nova, Pulsar, Quasar, Poly, Mega, Corvus) got percentage repair nerf. Nerfs were made because very OP for outhealing core (check funny picture. Keep in head that poly still shooting at enemy, not "repair" unit command (which is much stronger for outhealing!). 8-9 poly under "repair" command also fully outhealing core against 30+ zeniths. As counterchanges, cores got buffs (small hp buff for Shard and huge buff for Nucleus (still harder for outhealing, but balanced), also some units (Mega, Nova, Quasar) got "direct healing" (healing blocks in direct health amount (for example, unit with "10 direct repair" gonna heal 10 HP to any blocks with any max health, while percentage healing depends from max health amount (for example, unit with 2% healing, will heal 2/100 of total possible health block (50 shots from healing block from 0.000...1 to max block health) //todo 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ec63af86-b59b-4a6e-a1be-884d7d8e0c17" /> 
-<img width="522" height="189" alt="image" src="https://github.com/user-attachments/assets/4559078d-9cd0-4eb8-a084-f387c500ca76" />
+<img width="522" height="189" alt="image" src="https://github.com/user-attachments/assets/4559078d-9cd0-4eb8-a084-f387c500ca76" /> //todo add direct healing for poly and reduce percentage to 2%)
 
 
 
