@@ -59,50 +59,61 @@ Unit builcost changes:
 (Decreased consumption for T2 factory. It was made because T2 feels to expensive for mass production and combining poly + other T2 productionm. Increases window when players could play with T1 and T2 (and combine T1 + T2 (like nova + mace/nova + dagger/...) before players get enough resourses for making first T3 units (and might even build orders for combining T2 + T3 (like atrax + spiroct in pvp). As counternerf, most T2 got small nerfs in stats (because decreased T2 cost and also mobility buff exist)
 --------------------
 
-## Walls (wols)
+## Walls
 **Plastanium Wall:**
 - health: 400 (2000) -> 620 (2560)
+(Health was buffed due of making vela stronger and more mobility, also corvus attack was changed to burst, but with increased damage per attack)
 
 **Phase Wall:**
 - health: 600 (2400) → 720 (2880)
+(Buffed because was accepted in community as very expensive wall which feels weaker than thorium (it has specific niche, being pretty useful against swarmer BvB, but still not enough good to be used as lategame wall)
 
 **Surge Wall:**
 - health: 920 (3680) -> 980 (3920)
+(Slighty better than thorium wall, but comparing thorium (minable resourse) and surge (request massive amount of raw resourses and silicone) very rare used in real gameplay. Almost never used in pvp, good in pve only in lategame (where resourse amount doesn't matter and cost to much). I hope that this change gonna make it more useful and more often to be used. Keep in that menders healing walls in percentage, so I tried to avoid huge buffs (and making rush units (dagger tree) almost unable to get throught enemy defense))
 
 **Scrap Wall:**
 - health: 240 (960, 2160, 3840) -> 200 (800, 1800, 3200) 
+(Being very cheap wall (request scrap which rarely used for eco production) has insanely big health amount. It wasn't my idea to nerf it, thans to artically (idk7 aaa //todo find nickname) for noticing
 
 ## Other non-turret blocks (real)
 
 **Ground Factory:**
 - Requirements (block buildcost): copper 50 → 120, lead 120 → 70
+(check global changes)
 
 Unit builcost changes:
 - dagger (10 silicon, 10 lead -> 15 silicom, 10 lead)
 - crawler (8 silicon, 10 coal -> 10 silicon, 8 coal)
 - nova (30 silicon, 20 lead, 20 titanium -> 25 silicon, 10 lead, 15 titanium)
+(check global changes)
 
 **Air Factory:**
 - Requirements (block buildcost): Titanium 0 → 35 added
+(check global changes)
 
 **Reconstructors:**
 - Additive Reconstructor: Reduced consumption (Silicon 40 → 30, Graphite 40 → 30)
+(check global changes)
 
 **Repair Turret**
 - repairSpeed: 180/sec -> 90/sec
+(insanely powerful turret which outclasses any possible unit healing ability. Most players just using this turret without water/coolant supply, just turret spam + overdrive. I hope that halving gonna make peoples use atleast water/cryo for making it better, also this change should make BvB tactics with repair turret spam weaker (as counterchange, units with healing ability got huge buffs, same with shield ability)
 
 **Overdrive Projector**
 - requirements (block buildcost): lead: 100 -> 210, titanium: 75 (no changes), silicon: 75 (no changes), plastanium: 30 -> 35
+(Gonna make it slighty more expensive, increased lead cost in two times. This change can be discussed and probably removed (it doesn't make a big impact, just small useful change because why not))
              
 **Overdrive Dome**
 - requirements (block buildcost): lead: 200 -> 720, titanium: 130 -> 210, silicon: 130 -> 170, plastanium: 80 -> 175, surgeAlloy: 120 -> 275
 - consumePower: 600 pu/sec -> 1500 pu/sec
+(Ahhh, ODD spam, very controversible block in game. Some players wanna remove this block from game, some half its percentage boost and etc. Being very questionable block (and being ODD speedrun very powerful build order in competitve gamemodes. Nerfing percentage could one of most controversible change in any rebalance, so I did necessary evil. Increased its cost and energy consuption to delay ita placement and much harder to speedrun when (also keep in head that ODD doing turret in x2.5 times faster (and stronger), so its increase window for T1-T3 agressive micro/macro gameplay (before turrets get insanely powerful ODD/POD buffs)
             
 **ShockMine**
 - health: 50 -> 30
 - tendrils: 4 -> 7
 - damage: 25 -> 15
-
+(Small nerfs for landmines against armored units (T3+), it touches more competitive gameplay, in v7 was very abused to kill in few seconds huge T3 army (like fortress), in v8 new hitbox sizes makes landmine slighty weaker (but still powerful). Landmine kinda good (and even better than vanilla) against T1 and T2, but weaker to use on T3+ units which has big armor value)
 
 ## Effects
 **Burning:**
