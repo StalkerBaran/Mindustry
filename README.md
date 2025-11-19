@@ -9,7 +9,7 @@ _Server:_ `gradlew server:dist`
 
 # Changelog. I gonna slowly turn this changelog in documentation ~~(changelog but with description and writing every reason to my changes)~~
 
------------------
+---------------------
 # Global changes
 This changes appliees to most stuff in game and/or strongly affect in game (important to keep in head this changes before looking of separated changelog)
 
@@ -56,7 +56,7 @@ Unit builcost changes:
 
 **Reconstructors:**
 - Additive Reconstructor: Reduced consumption (Silicon: 40 → 30, Graphite: 40 → 30)
-(Decreased consumption for T2 factory. It was made because T2 feels to expensive for mass production and combining poly + other T2 productionm. Increases window when players could play with T1 and T2 (and combine T1 + T2 (like nova + mace/nova + dagger/...) before players get enough resourses for making first T3 units (and might even build orders for combining T2 + T3 (like atrax + spiroct in pvp). As counternerf, most T2 got small nerfs in stats (because decreased T2 cost and also mobility buff exist) //todo
+(Decreased consumption for T2 factory. It was made because T2 feels to expensive for mass production and combining poly + other T2 productionm. Increases window when players could play with T1 and T2 (and combine T1 + T2 (like nova + mace/nova + dagger/...) before players get enough resourses for making first T3 units (and might even build orders for combining T2 + T3 (like atrax + spiroct in pvp). As counternerf, most T2 got small nerfs in stats (because decreased T2 cost and also mobility buff exist)
 --------------------
 
 ## Walls (wols)
