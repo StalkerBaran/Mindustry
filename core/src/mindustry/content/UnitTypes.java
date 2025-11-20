@@ -175,7 +175,7 @@ public class UnitTypes{
                 bullet = new ArtilleryBulletType(2.5f, 20, "shell"){{
                     hitEffect = Fx.blastExplosion;
                     knockback = 0.8f;
-                    lifetime = 94.8f;
+                    lifetime = 94f;
                     width = height = 14f;
                     collides = true;
                     collidesTiles = true;
@@ -306,7 +306,7 @@ public class UnitTypes{
                         pierceBuilding = true;
                         pierceCap = 3;
 
-                        lifetime = 17f;
+                        lifetime = 12f;
                         hitEffect = Fx.flakExplosion;
                         splashDamage = 15f;
                         splashDamageRadius = 10f;
@@ -348,8 +348,7 @@ public class UnitTypes{
 
                 bullet = new LaserBoltBulletType(5.2f, 15){{
                     lifetime = 30f;
-                    healPercent = 1f;
-                    healAmount = 10f;
+                    healPercent = 3f;
                     collidesTeam = true;
                     backColor = Pal.heal;
                     frontColor = Color.white;
@@ -392,7 +391,7 @@ public class UnitTypes{
 
                 bullet = new LightningBulletType(){{
                     lightningColor = hitColor = Pal.heal;
-                    damage = 13f;
+                    damage = 15f;
                     lightningLength = 7;
                     lightningLengthRand = 7;
                     shootEffect = Fx.shootHeal;
@@ -941,7 +940,7 @@ public class UnitTypes{
                 bullet = new ArtilleryBulletType(3f, 110){{
                     hitEffect = Fx.sapExplosion;
                     knockback = 0.8f;
-                    lifetime = 73f;
+                    lifetime = 78f;
                     width = height = 25f;
                     collidesTiles = collides = true;
                     ammoMultiplier = 4f;
@@ -1337,7 +1336,9 @@ public class UnitTypes{
                     frontColor = Color.white;
                     hitSound = Sounds.none;
 
-                    healPercent = 3f;
+                    healPercent = 2f;
+                    healAmount = 10f;
+                    
                     collidesTeam = true;
                     reflectable = false;
                     backColor = Pal.heal;
@@ -1364,7 +1365,7 @@ public class UnitTypes{
             hitSize = 16.05f;
             engineSize = 3f;
             payloadCapacity = (2 * 2) * tilePayload;
-            buildSpeed = 2.6f;
+            buildSpeed = 1.5f;
             isEnemy = false;
 
             ammoType = new PowerAmmoType(1100);
@@ -1378,8 +1379,8 @@ public class UnitTypes{
                 rotate = true;
                 bullet = new LaserBoltBulletType(5.2f, 10){{
                     lifetime = 35f;
-                    healPercent = 3f;
-                    healAmount = 7.5f;
+                    healPercent = 2.5f;
+                    healAmount = 12f;
                     collidesTeam = true;
                     backColor = Pal.heal;
                     frontColor = Color.white;
@@ -1394,7 +1395,7 @@ public class UnitTypes{
                 bullet = new LaserBoltBulletType(5.2f, 8){{
                     lifetime = 35f;
                     healPercent = 2f;
-                    healAmount = 5.5f;
+                    healAmount = 10f;
                     collidesTeam = true;
                     backColor = Pal.heal;
                     frontColor = Color.white;
