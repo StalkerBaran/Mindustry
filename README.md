@@ -1,4 +1,4 @@
-6### Windows
+### Windows
 
 _Running:_ `gradlew desktop:run`  
 _Building:_ `gradlew desktop:dist`  
