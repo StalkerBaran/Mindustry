@@ -39,20 +39,16 @@ This change more touches competitive gamemodes (1 vs 1 PvP, FFA (Hexed, OpenPvP,
 Ye, I thought its also important to remember (this changes are the only which touches ratios (can be important for scheme builders and curated designes). I'll copy here a shortly changelog for changes which I made
 
 **Ground Factory:**
-- Requirements (block buildcost): copper 50 → 120, lead 120 → 70
-(Minor change which was made in first rebalance versions. I dont remember why I made this, so it can be discussed and removed. It feels more cosmetic (In PvE it doesn't matter but might allow for PvP players to create slightly different early game build orders ~~ground vs air enjoiners~~) 
 
 Unit builcost changes:
 - dagger (10 silicon, 10 lead -> 15 silicom, 10 lead)
 (It was made to make daggers harder to spam on first minuts (since it request even lower silicon amount than flare), also keep in head that T1 change nerf compensated by T2 cost buffs (read below))
-- crawler (8 silicon, 10 coal -> 10 silicon, 8 coal)
-(Very minor change, make it slighty more expensive in silicon amount and less affect from coal (also makes slightly harder to spam them in early game)
 - nova (30 silicon, 20 lead, 20 titanium -> 25 silicon, 10 lead, 15 titanium)
 (Huge nova cost buff, now it feels more usable in PvE and PvP. Important change for nova to make it moee usable (and easier to produce in bigger amount))
 
 **Air Factory:**
-- Requirements (block buildcost): Titanium 0 → 35 added
-(Now air factory request titanium in build cost. Necessary evil which designed to delay first flare production without making them very weak. Also it delays mono production, which increase time window where ground T2 rush (atrax, mace) can be useful and not spammed with poly arc/wall spam (PvP), delays mono production in campaign, which suppose to learn novice how to optimise drills (give more time for novice to learn input water in drills (and atleast to not connect 999 drills to single conveyor (real))
+- Requirements (block buildcost): Copper: 60 -> 70, Lead: 70 -> 120, Titanium: 0 → 35 (added)
+(Now air factory request titanium in build cost. Necessary evil change which designed to delay first flare production without making them very weak. Also it delays mono production, which increase time window where ground T2 rush (atrax, mace) can be useful and not spammed with poly arc/wall spam (PvP), delays mono production in campaign, which suppose to learn novice how to optimise drills (give more time for novice to learn input water in drills (and atleast to not connect 999 drills to single conveyor (real))
 
 **Reconstructors:**
 - Additive Reconstructor: Reduced consumption (Silicon: 40 → 30, Graphite: 40 → 30)
@@ -77,25 +73,6 @@ Unit builcost changes:
 (Being very cheap wall (request scrap which rarely used for eco production) has insanely big health amount. It wasn't my idea to nerf it, thans to artically (idk7 aaa //todo find nickname) for noticing
 
 ## Other non-turret blocks (real)
-
-**Ground Factory:**
-- Requirements (block buildcost): copper 50 → 120, lead 120 → 70
-(check global changes)
-
-Unit builcost changes:
-- dagger (10 silicon, 10 lead -> 15 silicom, 10 lead)
-- crawler (8 silicon, 10 coal -> 10 silicon, 8 coal)
-- nova (30 silicon, 20 lead, 20 titanium -> 25 silicon, 10 lead, 15 titanium)
-(check global changes)
-
-**Air Factory:**
-- Requirements (block buildcost): Titanium 0 → 35 added
-(check global changes)
-
-**Reconstructors:**
-- Additive Reconstructor: Reduced consumption (Silicon 40 → 30, Graphite 40 → 30)
-(check global changes)
-
 **Repair Turret**
 - repairSpeed: 180/sec -> 90/sec
 (insanely powerful turret which outclasses any possible unit healing ability. Most players just using this turret without water/coolant supply, just turret spam + overdrive. I hope that halving gonna make peoples use atleast water/cryo for making it better, also this change should make BvB tactics with repair turret spam weaker (as counterchange, units with healing ability got huge buffs, same with shield ability)
@@ -328,6 +305,7 @@ No changes
 ### Corvus
 - Health: 18000 → 15000
 - Armor: 9 → 12
+- Range: 57 -> 52
 
 - Weapon now fires 3 shots with short delay between shots (instead single beam)
   
