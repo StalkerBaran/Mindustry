@@ -184,6 +184,8 @@ No changes /shrug
 - pyratite: damage: (no changes); splashdamage: 45 -> 32; splashDamageRadius: 2.5 -> 5.5
 - surgeAlloy: damage: 18 -> 15; splashDamageRadius: 3.1 -> 3.2
 
+(Nerfing swarmer to not be a meta. Swarmer feels very strong turret which can be useful even against T5 (and insane for reactive damage spam). I thinking I could overbuff range for pyratite and blast, so probably it can be removed (should be discussed))
+
 ### Salvo
 - copper: damage: 11 -> 13
 - graphite: damage: 20 -> 25, reloadMultiplier = 0.7x
@@ -193,8 +195,9 @@ No changes /shrug
 
 - reload: 31f -> 32f
 - requirements (block buildcost): copper = 100, graphite = 80 -> copper = 125, graphite = 70
-
 - added inaccuracy (real)
+
+
 
 ### Segment
 No changes
