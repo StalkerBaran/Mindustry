@@ -137,7 +137,7 @@ Unit builcost changes:
 - silicon: damage: 12 -> 15
 
 - range: 20 -> 21
-(Duo feels like a meme in community. Being weakest turret in game, people kinda like this turret (like "in duo we trust" (gwapo jumpscare)). v8 changes from anuke already buffing duo enough, so I fixed graphite ammo (was to strong), //todo
+(Duo feels like a meme in community. Being weakest turret in game, people kinda like this turret (like "in duo we trust" (gwapo jumpscare)). v8 changes from anuke already buffing duo enough, so I fixed graphite ammo (was to strong), and small buffs because other units also got more buffs (and tried to make duo more useful in pvp)
 
 ### Scatter
 - scrap: splashDamage: 33 -> 25, splashDamageRadius: 3.0 -> 4.1
@@ -145,6 +145,8 @@ Unit builcost changes:
 - metaglass: splashDamage: 45 -> 15*1.5, splashDamageRadius: 2.5 -> 3.3, fragBullets: 6 -> 4, reloadMultiplier: 0.8x -> 0.7x
   
 - increased coolant buff (water: 140% -> 160%; cryofluid: 190% -> 235%)
+
+(Nearly halved damage, but increased coolant boost. Scatter, being very cheap and easy to use, could easily kill T1-T3 in big amount, and even possible to kill or deal massive damage to few T4 in vanilla. My changes are designed to be useful against T1-T2, but against zenith spam it would request to use alteast a coolant (also flare hp was halfed, reduced hp for horizon and zenith)
 
 ### Scorch
 - pyratite: damage: 60 -> 35
