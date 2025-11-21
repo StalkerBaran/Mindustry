@@ -587,7 +587,7 @@ public class UnitTypes{
                 parentizeEffects = true;
 
                 bullet = new LaserBulletType(){{
-                    length = 420f;
+                    length = 460f;
                     damage = 74f;
                     width = 75f;
 
