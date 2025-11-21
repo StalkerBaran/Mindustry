@@ -169,10 +169,12 @@ Unit builcost changes:
 
 ### Lancer
 - damage: 140 -> 120
+(Very strong turret (for consuming energy only). Reduced damage makes harder to spam enemy units with lancer spam (mostly in pvp)). Also damage was designed with new unit stats. Lancer can oneshot crawler and nova, but cant do that do daggers (so player must use pulsar shield as optional (to avoid getting oneshot))
 
 ### Arc
 - damage: 20 -> 13
 - reload = 1.71 -> 1.87
+(Arc spam very powerful in PvP (and even PvE) which allows to spam T1-T3 ground with arc spam, now damage redcued to 13 to make armor more useful in game (low damage against T3+)
 
 ### Parallax
 No changes /shrug
