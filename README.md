@@ -135,9 +135,9 @@ Unit builcost changes:
 - copper: damage: 9 -> 13
 - graphite: damage: 18 -> 21, reloadMultiplier = 0.7x
 - silicon: damage: 12 -> 15
-(y
 
 - range: 20 -> 21
+(Duo feels like a meme in community. Being weakest turret in game, people kinda like this turret (like "in duo we trust" (gwapo jumpscare)). v8 changes from anuke already buffing duo enough, so I fixed graphite ammo (was to strong), //todo
 
 ### Scatter
 - scrap: splashDamage: 33 -> 25, splashDamageRadius: 3.0 -> 4.1
