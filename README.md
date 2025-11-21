@@ -305,7 +305,6 @@ No changes
 ### Corvus
 - Health: 18000 → 15000
 - Armor: 9 → 12
-- Range: 57 -> 52
 
 - Weapon now fires 3 shots with short delay between shots (instead single beam)
   
