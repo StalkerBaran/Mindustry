@@ -153,13 +153,19 @@ Unit builcost changes:
 
 - range: 7.5 -> 9
 
+(Nerfed scorch, its not meta rn. I hope that range increase could make it slighty more useful in PvP)
+
 ### Hail
 - silicone: splashDamage: 33 -> 27
 - pyratite: splashDamageRadius: 2.3 -> 2.6
 
+(Slighty nerfed silicone ammo (it feels stronger than graphite and even pyratite (never misses). Did small buffs for pyra to make it more useful)
+
 ### Wave
 - slag: rangeChange (+3 range)
 - oil: rangeChange (+3 range)
+
+(idk who gonna use it in real gameplay, but makes possible for map makera to do small trollings (set slag + oil as start defrnse or use it in enemy defenses). I thinking nobody would against it)
 
 ### Lancer
 - damage: 140 -> 120
