@@ -4024,8 +4024,8 @@ public class Blocks{
                     width = height = 13f;
                     collidesTiles = false;
                     splashDamageRadius = 35f * 0.75f;
-                    splashDamage = 32f;
-                    fragBullet = new BasicBulletType(2.5f, 12, "bullet"){{
+                    splashDamage = 35f;
+                    fragBullet = new BasicBulletType(2.5f, 15, "bullet"){{
                         width = 10f;
                         height = 12f;
                         shrinkY = 1f;
