@@ -242,7 +242,7 @@ No changes
 - Health: 900 → 910
 - Armor: 9 → 10
 - Spldashdamage: 80 → 70
-- Increased fortress speed projectile
+- Increased fortress speed projectile. Decreased range from 29.5 -> 28.2
   
 ### Scepter
 - Speed: 2.7 → 3.9
