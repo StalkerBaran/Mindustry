@@ -188,7 +188,7 @@ No changes
 No changes
 
 ## Ripple
-- plastanium: splashDamage: 45 -> 32, pierceCap = 2, fragBullets: 10 -> 5, fragBulletDamage (idk how it names): 10 -> 12
+- plastanium: splashDamage: 45 -> 35, pierceCap = 2, fragBullets: 10 -> 5, fragBulletDamage (idk how it names): 10 -> 15
 - blastCompound: splashDamage: 55 -> 75, splashDamageRadius = 4.2 -> 5.2, reloadMultiplier: 0.7x
 - pyratite: splashDamage: 45 -> 48, splashDamageRadius = 2.3 -> 4.7
 
