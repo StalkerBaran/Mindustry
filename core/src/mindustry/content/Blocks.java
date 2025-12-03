@@ -4028,8 +4028,8 @@ public class Blocks{
                     collidesTiles = false;
                     ammoMultiplier = 4f;
                     splashDamageRadius = 42f;
-                    splashDamage = 125f;
-                    reloadMultiplier = 0.75f;
+                    splashDamage = 115f;
+                    reloadMultiplier = 0.7f;
 
                     status = StatusEffects.blasted;
                     lifeScaleRandMax = 1.08f;
@@ -4058,7 +4058,7 @@ public class Blocks{
                         despawnEffect = Fx.none;
                         collidesAir = false;
                     }};
-                    fragBullets = 12;
+                    fragBullets = 7;
                     backColor = Pal.plastaniumBack;
                     frontColor = Pal.plastaniumFront;
                     lifeScaleRandMax = 1.08f;
