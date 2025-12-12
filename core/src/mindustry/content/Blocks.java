@@ -4229,7 +4229,7 @@ public class Blocks{
                     despawnEffect = Fx.instBomb;
                     pointEffectSpace = 20f;
                     damage = 1350;
-                    buildingDamageMultiplier = 0.2f;
+                    buildingDamageMultiplier = 0.5f;
 
                     pierceDamageFactor = 1f;
                     length = brange;
